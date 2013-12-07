@@ -6,4 +6,43 @@ block vars
 //----------------------------------------
 
 append content
-  p I rock
+
+  section.hero
+    h1 Become the Postmaster General of your Inbox
+    h2.subheader An email client that focuses on getting emails done.
+    form
+      input(type="text")
+      input(type="button", value="submit")
+
+    img.screenshot(src="/images/hero-screenshot.png", alt="Screenshot of Mochila mail app")
+
+  section.itemlist-lite
+    ul
+      li
+        h3 Lightweight
+        p We’re straightforward messaging. Mochila Mail says no to clutter and yes to simple.
+      li
+        h3 Quick
+        p Keeping speed in mind. Get inbox zero in no time and spend less time on emails.
+      li
+        h3 Custom
+        p We want you to feel at home browsing your inbox. We let you customize fonts and colors.
+
+
+  section.itemlist-medium
+    ul
+      li
+        img(src="/images/screenshot-buttons.png", alt="screenshot buttons")
+        .inner
+          h3 Keep the Conversation Going
+          p We’ve built in shortcuts to reply to your messages without opening a new window for you to reply. And don’t worry about spelling errors & ways to customize your email, we’ve got you covered.
+      li
+        img(src="/images/screenshot-accounts.png", alt="screenshot accounts")
+        .inner
+          h3 Manage Multiple Accounts
+          p Easily switch between your Unified Inbox, personal and work email by opening up the switch account panel. No more struggles with log ins and log outs.
+      li
+        img(src="/images/screenshot-lists.png", alt="screenshot lists")
+        .inner
+          h3 Manage Lists Easily
+          p Sort your emails easily by putting them into lists. And don’t worry about spelling errors & ways to customize your email, we’ve got you covered.

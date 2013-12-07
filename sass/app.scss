@@ -1,3 +1,23 @@
+// Base
 body {
-  background: yellow;
+  font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+// Layout
+
+
+// Modules
+.logo {
+  display: block;
+  width: 108px;
+  height: 80px;
+  background-size:108px 80px;
+  background-image: url(/images/logo.png);
+}
+

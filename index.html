@@ -3,15 +3,80 @@
 <html lang="en">
   <head>
     <title>Michael is awesome</title>
+    <link rel="stylesheet" href="/bower_components/normalize-css/normalize.ccs">
+    <link rel="stylesheet" href="/css/app.css">
     <!-- Render head-->
   </head>
   <body>
-    <header>
-      <h1>Here comes header</h1>
+    <header class="site-header">
+      <div class="inner">
+        <div class="logo"></div>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/ios7">iOS7</a></li>
+            <li class="twitter"><a href="https://twitter.com/MochilaMail">Twitter</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <section class="content">
       <!-- Render content-->
-      <p>I rock</p>
+      <section class="hero">
+        <h1>Become the Postmaster General of your Inbox</h1>
+        <h2 class="subheader">An email client that focuses on getting emails done.</h2>
+        <form>
+          <input type="text">
+          <input type="button" value="submit">
+        </form><img src="/images/hero-screenshot.png" alt="Screenshot of Mochila mail app" class="screenshot">
+      </section>
+      <section class="itemlist-lite">
+        <ul>
+          <li>
+            <h3>Lightweight</h3>
+            <p>We’re straightforward messaging. Mochila Mail says no to clutter and yes to simple.</p>
+          </li>
+          <li>
+            <h3>Quick</h3>
+            <p>Keeping speed in mind. Get inbox zero in no time and spend less time on emails.</p>
+          </li>
+          <li>
+            <h3>Custom</h3>
+            <p>We want you to feel at home browsing your inbox. We let you customize fonts and colors.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="itemlist-medium">
+        <ul>
+          <li><img src="/images/screenshot-buttons.png" alt="screenshot buttons">
+            <div class="inner">
+              <h3>Keep the Conversation Going</h3>
+              <p>We’ve built in shortcuts to reply to your messages without opening a new window for you to reply. And don’t worry about spelling errors & ways to customize your email, we’ve got you covered.</p>
+            </div>
+          </li>
+          <li><img src="/images/screenshot-accounts.png" alt="screenshot accounts">
+            <div class="inner">
+              <h3>Manage Multiple Accounts</h3>
+              <p>Easily switch between your Unified Inbox, personal and work email by opening up the switch account panel. No more struggles with log ins and log outs.</p>
+            </div>
+          </li>
+          <li><img src="/images/screenshot-lists.png" alt="screenshot lists">
+            <div class="inner">
+              <h3>Manage Lists Easily</h3>
+              <p>Sort your emails easily by putting them into lists. And don’t worry about spelling errors & ways to customize your email, we’ve got you covered.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
     </section>
+    <footer class="site-footer">
+      <div class="logo"></div>
+      <h2 class="subheader">Still not sure? Sign up for beta and find out.</h2>
+      <form>
+        <input type="text">
+        <input type="button" value="submit">
+      </form>
+    </footer>
   </body>
 </html>
