@@ -6,29 +6,32 @@ html(lang="en")
     title #{pageTitle}
     link(rel='stylesheet', href='/bower_components/normalize-css/normalize.css')
     link(rel='stylesheet', href='/css/app.css')
+    script(type="text/javascript", src="//use.typekit.net/eyr1aev.js")
+    script(type="text/javascript")
+      try{Typekit.load();}catch(e){}
 
     // Render head
     block head
 
   body
     header.site-header
-      .inner
+      .inner-wrap
         .logo
         nav
           ul.top-menu
-            li: a(href="/") Home
+            li.home: a(href="/") Home
             li: a(href="/about") About
-            li: a(href="/ios7") iOS7
+            li.ios7: a(href="/ios7") iOS7
             li.twitter: a(href="https://twitter.com/MochilaMail") Twitter
 
-    section.content
+    .content
       // Render content
       block content
 
-    footer.site-footer
+    footer.centered.site-footer
       .logo
       h2.subheader Still not sure? Sign up for beta and find out.
 
-      form
-        input(type="text")
-        input(type="button", value="submit")
+      form.form-subscribe
+        input(type="text", placeholder="Enter email for beta testing...")
+        input(type="button", value="")
