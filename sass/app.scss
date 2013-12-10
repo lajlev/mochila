@@ -1,10 +1,10 @@
+@import 'normalize';
 @import 'mixins';
 
 // Variables
 $font-size-base: 14px;
 $text-color: #323b3d;
 $text-color-hover: darken($text-color, 10%);
-
 $cta-color: #d44a4a;
 
 // Only have italic & bold italic
@@ -12,14 +12,14 @@ $alt-font: "ff-tisa-web-pro", serif;
 
 // Base
 * {
-  @include box-sizing('border-box');
-}
+  @include box-sizing('border-box'); }
 
 body {
   font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  @include font-feature-liga;
   font-size: $font-size-base;
   color: $text-color;
-}
+  margin: 0; }
 
 p {
   margin-top: 0;
@@ -31,8 +31,7 @@ p {
 
 h1, h2, h3 {
   -webkit-font-smoothing: antialiased;
-  font-weight: normal;
-}
+  font-weight: normal; }
 
 h1 {
   font-size: 31px;
@@ -73,12 +72,10 @@ a {
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 img {
-  max-width: 100%;
-}
+  max-width: 100%; }
 
 // Layout
 header{
@@ -92,20 +89,17 @@ header{
 
 .inner-wrap {
   margin: 0 auto;
-  max-width: 1220px;
-}
+  max-width: 1220px; }
 
 // Sections
 section {
   padding: 3em .5em;
 
   &.dark {
-    background: #0e1315;
-  }
+    background: #0e1315; }
 
   &.hero {
-    padding-bottom: 0;
-  }
+    padding-bottom: 0; }
 
   &.z2 {
     z-index: 2;
@@ -116,8 +110,7 @@ section {
 
 // Modules
 .centered {
-  text-align: center;
-}
+  text-align: center; }
 
 .logo {
   display: block;
@@ -135,8 +128,7 @@ section {
     margin-left: 1em;
 
     &.home {
-      @media (max-width:350px) {display: none}
-    }
+      @media (max-width:350px) {display: none} }
 
     &.ios7 a {
       text-decoration:line-through; }
@@ -173,8 +165,7 @@ section {
   max-width: 1197px;
   position: relative;
   top: 6px;
-  z-index: 1;
-}
+  z-index: 1; }
 
 .itemlist-lite { // ul
   margin: 4em auto 0;
@@ -188,13 +179,14 @@ section {
       display: inline-block;
       content: " ";
       width: 80px; height: 80px;
-      @include background-size(80px, 80px);
-    }
+      @include background-size(80px, 80px); }
 
     &.lightweight:before {
       background-image: url(/images/icon-lightweight.png); }
+
     &.quick:before {
       background-image: url(/images/icon-quick.png); }
+
     &.settings:before {
       background-image: url(/images/icon-settings.png);
     }
@@ -219,17 +211,22 @@ section {
   }
 }
 
+
 .itemlist-medium { // ul
   li {
     text-align: center;
     border-bottom: 2px solid #141b1e;
     padding: 3em 0;
+
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 1em;
+    }
   }
 
   .inner {
     margin: 0 auto;
-    max-width: 400px;
-  }
+    max-width: 400px; }
 
   img {
     max-width: 220px;
@@ -240,14 +237,13 @@ section {
   .itemlist-medium { // ul
     li {
       @include clearfix;
-      text-align: left;
-    }
+      text-align: left; }
+
     .inner {
       float: right;
       width: 70%;
       margin: 3.5em 0 0 0;
-      max-width: none;
-    }
+      max-width: none; }
 
     img {
       display: block;
@@ -256,7 +252,22 @@ section {
     }
   }
 
+  // Right aligned image
+  li.alt {
+    text-align: right;
+
+    .inner {
+      float: left;
+    }
+
+    img {
+      float: right;
+    }
+  }
+
+
 }
+
 
 .form-subscribe { // form
   @include clearfix;
@@ -297,8 +308,7 @@ section {
   margin-top: 3em;
 
   .logo {
-    display: inline-block;
-  }
+    display: inline-block; }
 
   .form-subscribe input[type="text"] {
     border: 1px solid #eaeeef;

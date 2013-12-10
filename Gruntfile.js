@@ -2,10 +2,11 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
+
     sass: {
       dist: {
         files: {
-          'css/app.css': 'sass/app.scss'
+          'static/css/app.css': 'sass/app.scss'
         }
       }
     },
@@ -19,7 +20,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'views',
           src: ['*.jade'],
-          dest: '',
+          dest: 'static/',
           ext: '.html'
         }]
       }
@@ -29,7 +30,7 @@ module.exports = function(grunt) {
       server: {
         options: {
           port: 9001,
-          base: ''
+          base: 'static/'
         }
       }
     },

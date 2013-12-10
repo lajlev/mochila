@@ -4,10 +4,9 @@ doctype 5
 html(lang="en")
   head
     title #{pageTitle}
-    link(rel='stylesheet', href='/bower_components/normalize-css/normalize.css')
     link(rel='stylesheet', href='/css/app.css')
     script(type="text/javascript", src="//use.typekit.net/eyr1aev.js")
-    script(type="text/javascript")
+    script.
       try{Typekit.load();}catch(e){}
 
     // Render head
@@ -30,7 +29,7 @@ html(lang="en")
 
     footer.centered.site-footer
       .logo
-      h2.subheader Still not sure? Sign up for beta and find out.
+      h2.subheader Try Mochila Mail. Sign up for beta and find out.
 
       form.form-subscribe
         input(type="text", placeholder="Enter email for beta testing...")

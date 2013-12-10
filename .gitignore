@@ -1,4 +1,6 @@
 node_modules
 css
+static
 .html
+aws-credentials.json
 _.sublime-workspace

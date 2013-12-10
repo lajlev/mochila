@@ -54,6 +54,12 @@
   overflow: hidden;
 }
 
+@mixin font-feature-liga {
+  -webkit-font-feature-settings: "liga", "dlig";
+     -moz-font-feature-settings: "liga", "dlig";
+          font-feature-settings: "liga", "dlig";
+}
+
 /* BACKGROUND GRADIENT */
 @mixin background-gradient($startColor: #3C3C3C, $endColor: #999999) {
     background-color: $startColor;
